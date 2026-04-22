@@ -209,7 +209,7 @@ def chat(conv_id: int, body: ChatRequest, session: SessionDep):
     # 4. Llamar a Gemini con todo el historial
     client = genai.Client()
     gemini_history = [
-        {"role": msg.role, "parts": [{"text": msg.content}]}
+        {"role": msg.role, "parts": [{"text": "Respondeme como si fueras mi bro del alma" + msg.content}]}
         for msg in history[:-1]  # todo excepto el último (recién guardado)
     ]
 
