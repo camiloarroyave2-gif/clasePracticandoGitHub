@@ -25,7 +25,7 @@ def hash_password(password: str) -> str:
     return hashlib.sha256(password.encode()).hexdigest()
 
 
-# ── Modelos ──────────────────────────────────────────────
+# ── Modeloss ──────────────────────────────────────────────
 class User(SQLModel, table=True):
       id: int | None = Field(default=None, primary_key=True)
       username: str = Field(unique=True, index=True)
