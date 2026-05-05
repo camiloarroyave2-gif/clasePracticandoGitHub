@@ -230,4 +230,4 @@ def chat(conv_id: int, body: ChatRequest, session: SessionDep):
     session.refresh(bot_msg)
 
     return bot_msg
-# Fin del código
+# Fin del código o
